@@ -1,0 +1,17 @@
+{{ define "create" }}
+
+{{ template "header" }}
+
+<main role="main" class="inner cover">
+  <h1 class="cover-heading">Add article about Jojo's Bizarre Adventures</h1>
+  <form action="/save_article" method="post">
+    <input type="text" name="title" id="title" placeholder="Input name of article about JoJo" class="form-control"><br>
+    <textarea name="anons" id="anons" class="form-control" placeholder="Input anons of article about JoJo"></textarea><br>
+    <textarea name="full_text" id="full_text" class="form-control" placeholder="Input full text of article about JoJo"></textarea><br>
+    <button class="btn btn-warning">Add</button>
+  </form>
+</main>
+
+{{ template "footer" }}
+
+{{ end }}
